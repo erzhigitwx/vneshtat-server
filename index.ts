@@ -14,7 +14,7 @@ app.use(cors({
     origin: "*"
 }));
 app.use(express.json());
-app.use(citiesRouter);
+app.use('/api/static-db-app', citiesRouter);
 
 (async () => {
     try {
