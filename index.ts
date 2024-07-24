@@ -14,7 +14,7 @@ app.use(cors({
     origin: "*"
 }));
 app.use(express.json());
-app.use("/api", citiesRouter);
+app.use(citiesRouter);
 
 (async () => {
     try {
